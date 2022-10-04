@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Logs</title>
+    </head>
+    <body>
+        <h1>Game Log</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="1000" onload="getLog();">
+            <g transform="translate(20 -90)">
+                <polyline  points="" stroke="black" stroke-width="2"
+                fill="none" id='rect'/>
+                <polyline  points="" stroke="red" stroke-width="2"
+                fill="none" id='played'/>
+                <polyline  points="" stroke="green" stroke-width="2"
+                fill="none" id='completed' />
+                <g transform="translate(30 0)">
+                    <line id="l1" x1="0" y1="0" x2="8" y2="200" style="stroke:red;stroke-width:2" />
+                    <line id="l2" x1="90" y1="0" x2="98" y2="200" style="stroke:green;stroke-width:2" />
+                    <text y="0" x='10' id="t1">Played</text>
+                    <text y='0' x="100" id="t2">Completed</text>
+                    
+                </g>
+                <text id='maxnum' x="-20" y="200">Max</text>
+                <text id="minnum" x="-15" y="200">Min</text>
+                <text id="datemin" x="100" y="100">2</text>
+                <text id="datemax" x="100" y="100">1</text>
+                
+            </g>
+        </svg>
+    </body>
+    <script type="text/javascript" src="jdos028.js"> </script>
+</html>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="400" width="400">
+<defs>
+    <mask id='rectmask'>
+        <rect x='78' width="50" height="50"/>
+    </mask>
+    <clipPath id='rect1clip'>
+        <rect x='100' y='230' width="80" height="180" />
+        <!-- <rect y='107' width="116" height="50" /> -->
+    </clipPath>
+    <clipPath id='rect2clip'>
+        <!-- <rect x='78' width="50" height="116" /> -->
+        <rect x='10' y='380' width="100" height="20" />
+    </clipPath>
+    <clipPath id='rect3clip'>
+        <!-- <rect x='78' width="50" height="116" /> -->
+        <rect x='200' y='20' width="170" height="250" />
+    </clipPath>
+    <clipPath id='rect4clip'>
+        <!-- <rect x='78' width="50" height="116" /> -->
+        <rect x='200' y='250' width="170" height="250" />
+    </clipPath>
+    <clipPath id='ellipclip'>
+        <rect  width='180' height='400'/>
+        <rect x='200' height='400' width='200'/>
+    </clipPath>
+</defs>
+<g>
+    <ellipse cx="200" cy="400" rx="190" ry="380" style="fill-opacity:0;stroke-width:20;stroke:rgb(0,0,0);clip-path: url(#ellipclip);" />
+    <rect id='rect' x='20' y='250'  width="150" height="140" style="fill-opacity:0;stroke-width:20;stroke:rgb(0,0,0);clip-path: url(#rect1clip)" rx='1' ry='1'/>
+    <rect id='rect' x='10' y='250'  width="150" height="140" style="fill-opacity:0;stroke-width:20;stroke:rgb(0,0,0);clip-path: url(#rect2clip)"/>
+    <rect id='rect' x='210' y='0'  width="170" height="250" style="fill-opacity:0;stroke-width:20;stroke:rgb(0,0,0);clip-path: url(#rect3clip)"/>
+    <rect id='rect' x='210' y='250'  width="170" height="250" style="fill-opacity:0;stroke-width:20;stroke:rgb(0,0,0);clip-path: url(#rect4clip)"/>
+</g>
+</svg>
